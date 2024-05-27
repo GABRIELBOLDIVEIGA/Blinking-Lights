@@ -1,5 +1,6 @@
 import Lottie from "lottie-react";
 import bg_animated from "@/assets/bg-animated.json";
+import { SwitchTheme } from "../switch-theme";
 
 export const Header = () => {
   return (
@@ -17,6 +18,7 @@ export const Header = () => {
             <span className="dark:text-primary">Ligths</span>
           </h1>
         </div>
+        <SwitchTheme className="absolute top-4 right-4 sr-only" />
       </div>
     </section>
   );
