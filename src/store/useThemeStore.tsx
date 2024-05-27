@@ -11,7 +11,7 @@ type ThemeStore = {
 export const useThemeStore = create<ThemeStore>()(
   persist(
     (set) => ({
-      theme: "light",
+      theme: "dark",
       setTheme: (theme) => {
         const root = window.document.documentElement;
 
