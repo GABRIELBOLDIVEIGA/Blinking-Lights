@@ -62,26 +62,28 @@ const cards = [
 
 export const CardsServicos = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 w-8/12">
-      {cards.map((card) => (
-        <Card
-          key={card.title}
-          className="hover:bg-muted cursor-pointer hover:scale-105 transition-all ease-in-out duration-200"
-        >
-          <CardHeader className="pb-2">
-            <CardTitle>
-              <div className="flex justify-between pb-2">
-                <p className="text-rose-600">{card.icon}</p>
-                <MoveUpRight size={18} className="font-black" />
-              </div>
-              <p className="font-semibold">{card.title}</p>
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <CardDescription>{card.description}</CardDescription>
-          </CardContent>
-        </Card>
-      ))}
-    </div>
+    <div className=" container">
+      <div className="grid sm:grid-cols-3 gap-4 ">
+        {cards.map((card) => (
+          <Card
+            key={card.title}
+            className="hover:bg-muted cursor-pointer hover:scale-105 transition-all ease-in-out duration-200"
+          >
+            <CardHeader className="pb-2">
+              <CardTitle>
+                <div className="flex justify-between pb-2">
+                  <p className="text-rose-600">{card.icon}</p>
+                  <MoveUpRight size={18} className="font-black" />
+                </div>
+                <p className="font-semibold">{card.title}</p>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription>{card.description}</CardDescription>
+            </CardContent>
+          </Card>
+        ))}
+      </div></div>
+
   );
 };
