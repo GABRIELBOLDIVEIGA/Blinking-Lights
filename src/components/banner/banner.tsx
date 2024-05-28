@@ -69,14 +69,7 @@ const icons = [
 
 export const Banner = () => {
   return (
-    <div className="h-20 py-4 dark:bg-primary-foreground  w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-      <ul className=" flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-        {icons.map((icon) => (
-          <li key={icon.title}>
-            <img src={`${icon.icon}`} />
-          </li>
-        ))}
-      </ul>
+    <div className="h-20 py-4 dark:bg-primary-foreground w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
       <ul
         className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
         aria-hidden="true"
@@ -87,10 +80,20 @@ export const Banner = () => {
           </li>
         ))}
       </ul>
-      <ul
-        className=" flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
-        aria-hidden="true"
-      >
+
+      {[1, 2].map((i) => (
+        <ul
+          key={i}
+          className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+        >
+          {icons.map((icon) => (
+            <li key={icon.title}>
+              <img src={`${icon.icon}`} />
+            </li>
+          ))}
+        </ul>
+      ))}
+      <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
         {icons.map((icon) => (
           <li key={icon.title}>
             <img src={`${icon.icon}`} />
