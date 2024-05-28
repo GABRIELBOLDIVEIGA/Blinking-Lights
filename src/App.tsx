@@ -10,21 +10,21 @@ function App() {
     <section className="h-screen">
       <ScrollArea className="h-[100%]">
         <Header />
-
-        <main className="">
-          <section className=" w-screen text-center">
+        <main>
+          <section className=" w-screen text-center overflow-hidden">
             <Banner />
           </section>
-
-          <section className=" py-10">
-            <div className="flex flex-col justify-center gap-4 items-center">
-              <h1 className="font-bold text-6xl">
-                <span>Nossos</span>
-                <span className="text-rose-600"> Serviços</span>
-              </h1>
-              <h3 className="text-muted-foreground text-xl font-medium capitalize">
-                desenvolvimento full stack para inovação digital
-              </h3>
+          <section className="py-10">
+            <div className=" container">
+              <div className="flex flex-col justify-center gap-4 items-center">
+                <h1 className="font-bold text-6xl ">
+                  <span>Nossos</span>
+                  <span className="text-rose-600"> Serviços</span>
+                </h1>
+                <h3 className="text-muted-foreground text-xl font-medium capitalize">
+                  desenvolvimento full stack para inovação digital
+                </h3>
+              </div>
             </div>
           </section>
 
@@ -39,6 +39,7 @@ function App() {
           <section>
             <Percos />
           </section>
+
         </main>
       </ScrollArea>
     </section>
