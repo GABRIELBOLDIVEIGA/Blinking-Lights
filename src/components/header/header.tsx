@@ -14,7 +14,7 @@ export const Header = () => {
       <div className="absolute w-screen flex justify-center text-primary-foreground bg-black bg-opacity-50 border-b-[1px] border-muted-foreground">
         <div className="flex h-20 items-end pb-6 justify-between w-10/12">
           <h1 className="text-4xl font-bold">
-            <span className="text-rose-600">Blincking</span>{" "}
+            <span className="text-rose-600">Blinking</span>{" "}
             <span className="dark:text-primary">Ligths</span>
           </h1>
         </div>
