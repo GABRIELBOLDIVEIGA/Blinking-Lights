@@ -24,7 +24,7 @@ export const Stats = () => {
                 <CountUp end={Math.random() * 100} />
                 <span>+</span>
               </p>
-              <p className=" bg-muted text-white rounded-full font-bold">
+              <p className=" bg-muted text-muted-foreground rounded-full font-bold">
                 Projetos realizados
               </p>
             </div>
@@ -33,7 +33,7 @@ export const Stats = () => {
                 <CountUp end={Math.random() * 100} />
                 <span>+</span>
               </p>
-              <p className="  bg-muted text-white rounded-full font-bold">
+              <p className="  bg-muted text-muted-foreground rounded-full font-bold">
                 Horas Trabalhadas
               </p>
             </div>
@@ -42,7 +42,7 @@ export const Stats = () => {
                 <CountUp end={Math.random() * 100} />
                 <span>+</span>
               </p>
-              <p className="  bg-muted text-white rounded-full font-bold">
+              <p className="  bg-muted text-muted-foreground rounded-full font-bold">
                 Desenvolvedores
               </p>
             </div>
